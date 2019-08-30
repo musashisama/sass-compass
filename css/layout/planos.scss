@@ -59,22 +59,17 @@
     width: 210px;
     height: 38px;
     font-size: 1.2em;
-    @include borda-arredondada();
+    //@include borda-arredondada();
+    @include border-radius(0.3em);
     @include box-shadow(black 0 2px 6.65px);
     //@extend %sombra-padrao;
     margin-left: 2em;
   }
-  
-  .icone-check, .icone-x {
-    background: url(../imagens/sprite.png) no-repeat;
-    width: 18px;
-    height: 18px;
+  @include all-sprite-sprites;
+  .sprite-icone-check, .sprite-icone-x {
+    //background: url(../imagens/sprite.png) no-repeat;
+    //background: url(../imagens/sprite-sbc5bd0d452.png) no-repeat;
+    width: 20px;
+    height: 20px;
   }
-  
-  .icone-check {
-    background-position: -5px -5px;
-  }
-  
-  .icone-x {
-    background-position: -33px -5px;
-  }
+ 
